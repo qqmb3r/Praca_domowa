@@ -47,3 +47,9 @@ with open(f, 'r') as infile: # 'r' == read
     except:
         dict[myText] = 1
     print(dict)
+
+
+    class Triangle(Shape):
+        def tri_surface(self):
+            s = (self._a + self._b + self._c) / 2
+            return (s * (s - self._a) * (s - self._b) * (s - self._c)) ** 0.5
